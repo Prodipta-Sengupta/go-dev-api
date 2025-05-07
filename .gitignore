@@ -1,0 +1,40 @@
+# Binaries for programs and plugins
+*.exe
+*.so
+*.dll
+
+# Output of the go build command
+*.out
+
+# CruiseControl.net files
+*.buildresults
+
+# NUnit files
+*.nunit
+
+# Test files
+_test/
+_test.go
+
+# Object files
+*.o
+
+# Editor files
+*.[oa]
+
+# Miscellaneous
+*.log
+*.tmp
+*.tmpversions
+*.userprefs
+
+# Go scaffold
+_scaffold/
+/vendor/
+Gopkg.lock
+Gopkg.toml
+
+# Go binaries
+*.exe
+*.test
+*.exe
