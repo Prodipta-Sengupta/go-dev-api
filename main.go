@@ -1,16 +1,19 @@
 package main
 
 import (
+	"go-dev/module/db"
 	"go-dev/module/models"
 	"net/http"
-	"unicode"
 	"time"
+	"unicode"
+
 	"github.com/gin-gonic/gin"
 )
 
-func main(){
+func main() {
+	db.InitDB()
 	server := gin.Default()
-	server.GET("/",hello)
+	server.GET("/", hello)
 	server.GET("/events", getAllEvents)
 	server.POST("/events", createEvent)
 	server.Run(":8080")
